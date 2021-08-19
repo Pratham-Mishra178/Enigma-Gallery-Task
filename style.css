@@ -43,10 +43,10 @@ nav .logo {
 .logo > button{
     background-color: #ff9c08;
     border-width: 0px;
-    padding-top: 0.37rem;
-    padding-bottom: 0.12rem;
-    padding-right: 0.45rem;
-    padding-left: 0.45rem;
+    padding-top: 0.40rem;
+    padding-bottom: 0.15rem;
+    padding-right: 0.46rem;
+    padding-left: 0.46rem;
     outline: 2px solid transparent;
     outline-offset: 2px;
     border-radius: 9999px;
