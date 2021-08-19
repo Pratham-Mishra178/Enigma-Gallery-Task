@@ -43,8 +43,8 @@ nav .logo {
 .logo > button{
     background-color: #ff9c08;
     border-width: 0px;
-    padding-top: 0.35rem;
-    padding-bottom: 0.15rem;
+    padding-top: 0.37rem;
+    padding-bottom: 0.12rem;
     padding-right: 0.45rem;
     padding-left: 0.45rem;
     outline: 2px solid transparent;
@@ -63,7 +63,7 @@ nav .logo {
     text-decoration: none;
 }
 
-.logo:hover{
+.title:hover{
     background-color: #4158D0;
     background-image: radial-gradient(circle, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
     background-size: 400%;
@@ -161,14 +161,14 @@ input[type="checkbox"] {
 .b-3 {
     border: 8px solid white;
     background: url(//unsplash.it/600/400/?natue);
-    background-size: 100%;
+    background-size: cover;
     grid-row: span 2;
     grid-column: span 2;
 }
 .b-4 {
     border: 8px solid white;
     background: url(//unsplash.it/600/200/?trees);
-    background-size: 100%;
+    background-size: cover;
     grid-row: span 1;
     grid-column: span 2;
 }
@@ -244,6 +244,61 @@ input[type="checkbox"] {
     nav ul li a:hover {
         background: none;
         color: cyan;
+    }
+
+    .box-inner {
+        margin-top: 30px;
+        display: grid;
+        height: 100%;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+
+
+    .b-1 {
+        border: 8px solid white;
+        background: url(//unsplash.it/180/160/?photography);
+        background-size: cover;
+        background-repeat: no-repeat;
+        grid-row: span 1;
+        grid-column: span 2;
+    }
+
+    .b-2 {
+        border: 8px solid white;
+        background: url(//unsplash.it/80/155/?fruits);
+        background-size: cover;
+        background-repeat: no-repeat;
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+
+    .b-3 {
+        border: 8px solid white;
+        background: url(//unsplash.it/284/155/?natue);
+        background-size: cover;
+        background-repeat: no-repeat;
+        grid-row: span 1;
+        grid-column: span 3;
+    }
+
+    .b-4 {
+        border: 8px solid white;
+        background: url(//unsplash.it/71/155/?trees);
+        background-size: cover;
+        background-repeat: no-repeat;
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+
+    .b-5 {
+        border: 8px solid white;
+        background: url(//unsplash.it/178/155/?animal);
+        background-size: cover;
+        background-repeat: no-repeat;
+        grid-row: span 1;
+        grid-column: span 2;
     }
 
 }
