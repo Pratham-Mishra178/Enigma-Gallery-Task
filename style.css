@@ -111,94 +111,118 @@ input[type="checkbox"] {
     display: none;
 }
 
-section{
-    padding: 50px;
+
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,700");
+
+* {
+    box-sizing: border-box;
 }
 
-.box-main{
-    background-color: #fff;
+body {
+    background: #353535;
+    color: #c4c4c4;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.45;
     display: flex;
-    border: 5px solid white;
-    width: 100%;
-    height: 43rem;
-    position: relative;
-    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+
+@media (min-width: 1500px) {
+    .logo {
+        margin-bottom: 5em;
+    }
+}
+
+
+@media (min-width: 1500px) {
+    .nav-item {
+        display: block;
+        margin: 7vh 0;
+    }
+}
+
+.main-content {
+    padding: 10%;
+    flex: 1 1 80%;
+    min-height: 100vh;
     z-index: -1;
 }
 
-.box-1{
-    background: url(8.jfif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: 8px solid black;
-    height: 25rem;
-    width: 25rem;
+.portfolio {
+    display: grid;
+    height: 100%;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
 }
-.box-2 {
-    background: url(1.jfif);
-    background-repeat: no-repeat;
+
+.portfolio-item {
+    background: #f96855;
+    color: #c4c4c4;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
     background-size: cover;
-    border: 8px solid black;
-    height: 18rem;
-    width: 25rem;
+    background-position: top left;
+    transition: all ease-in-out 300ms;
+    position: relative;
+    z-index: 10;
+}
+
+.portfolio-item.small {
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+.portfolio-item.medium {
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+.portfolio-item.large {
+    grid-row: span 3;
+    grid-column: span 3;
+}
+
+.portfolio-item.tall {
+    grid-row: span 3;
+    grid-column: span 2;
+}
+
+.portfolio-item.wide {
+    grid-row: span 2;
+    grid-column: span 3;
+}
+
+.portfolio-item:hover {
+    color: white;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.85);
+}
+
+.two {
+    background-image: url(//unsplash.it/800/600);
+}
+
+.two::before {
+    content: "";
+    display: block;
+    background: #353535;
+    opacity: 0.8;
     position: absolute;
-    bottom: 0;
-}
-.box-3 {
-    background: url(2.jfif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: 8px solid black;
-    width: 17rem;
-}
-.box-4 {
-    background: url(3.jfif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: 8px solid black;
-    height: 25rem;
-    width: 35.98rem;
-}
-.box-5 {
-    background: url(4.jfif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: 8px solid black;
-    height: 18rem;
-    width: 18rem;
-    position: absolute;
-    bottom: 0;
-    left: 40.81%;
-}
-.box-6 {
-    background: url(5.jfif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: 8px solid black;
-    height: 18rem;
-    width: 18rem;
-    position: absolute;
-    bottom: 0;
-    left: 58.3%;
-}
-.box-7 {
-    background: url(6.jfif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: 8px solid black;
-    height: 12rem;
-    width: 24.87rem;
-    position: absolute;
-    bottom: 0;
+    top: 0;
     right: 0;
+    bottom: 0;
+    left: 0;
+    transition: all ease-in-out 300ms;
+    z-index: -1;
 }
-.box-8 {
-    background: url(7.jfif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: 8px solid black;
-    height: 50rem;
-    width: 24.87rem;
+
+.two:hover::before {
+    opacity: 0.2;
 }
 
 @media (max-width: 1000px) {
@@ -261,68 +285,6 @@ section{
         color: cyan;
     }
 
-    .box-1 {
-        background-color: rgb(255, 0, 64);
-        height: 11rem;
-        width: 11rem;
-    }
-
-    .box-2 {
-        background-color: green;
-        height: 15rem;
-        width: 12.5rem;
-        position: absolute;
-        bottom: 9rem;
-    }
-
-    .box-3 {
-        background-color: yellow;
-        height: 11rem;
-        width: 9rem;
-    }
-
-    .box-4 {
-        background-color: pink;
-        height: 8rem;
-        width: 20rem;
-        position: absolute;
-        top: 11rem;
-    }
-
-    .box-5 {
-        background-color: orange;
-        height: 5rem;
-        width: 9rem;
-        position: absolute;
-        bottom: 14rem;
-        left: 12.2rem;
-    }
-
-    .box-6 {
-        background-color: blue;
-        height: 5rem;
-        width: 9rem;
-        position: absolute;
-        bottom: 19rem;
-        left: 12.2rem;
-    }
-
-    .box-7 {
-        background-color: rgb(162, 0, 255);
-        height: 5rem;
-        width: 9rem;
-        position: absolute;
-        bottom: 9rem;
-        left: 12.2rem;
-    }
-
-    .box-8 {
-        background-color: gray;
-        height: 9rem;
-        width: 20rem;
-        position: absolute;
-        bottom: 0;
-    }
 }
 
 
