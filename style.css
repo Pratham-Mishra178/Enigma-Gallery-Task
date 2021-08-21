@@ -135,7 +135,15 @@ input[type="checkbox"] {
     margin-top: 50px;
 }
 
-.box-inner {
+.box-inner-1 {
+    margin-top: -60px;
+    display: grid;
+    height: 100%;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+.box-inner-2 {
     display: grid;
     height: 100%;
     grid-template-rows: repeat(3, 1fr);
@@ -177,8 +185,142 @@ input[type="checkbox"] {
     background: url(//unsplash.it/300/200/?animal);
     background-size: cover;
 }
+.b-6 {
+    border: 8px solid white;
+    background: url(//unsplash.it/300/600/?photography);
+    background-size: cover;
+    grid-row: span 2;
+    grid-column: span 2;
+}
 
+.b-7 {
+    border: 8px solid white;
+    background: url(//unsplash.it/300/400/?fruits);
+    background-size: cover;
+    grid-row: span 2;
+    grid-column: span 1;
+}
 
+.b-8 {
+    border: 8px solid white;
+    background: url(//unsplash.it/600/400/?natue);
+    background-size: cover;
+    grid-row: span 3;
+    grid-column: span 1;
+}
+
+.b-9 {
+    border: 8px solid white;
+    background: url(//unsplash.it/600/200/?trees);
+    background-size: cover;
+    grid-row: span 1;
+    grid-column: span 2;
+}
+
+.b-10 {
+    border: 8px solid white;
+    background: url(//unsplash.it/300/200/?animal);
+    background-size: cover;
+}
+
+@media (max-width: 875px) {
+
+    .box-inner-1 {
+        margin-top: 30px;
+        display: grid;
+        height: 100%;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+
+    .box-inner-2 {
+        margin-top: -230px;
+        display: grid;
+        height: 100%;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+
+    .b-1 {
+        border: 8px solid white;
+        background: url(//unsplash.it/180/160/?photography);
+        background-size: cover;
+        background-repeat: no-repeat;
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+
+    .b-2 {
+        border: 8px solid white;
+        background: url(//unsplash.it/80/155/?fruits);
+        background-size: cover;
+        background-repeat: no-repeat;
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+
+    .b-3 {
+        border: 8px solid white;
+        background: url(//unsplash.it/284/155/?natue);
+        background-size: cover;
+        background-repeat: no-repeat;
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+
+    .b-4 {
+        border: 8px solid white;
+        background: url(//unsplash.it/284/155/?natue);
+        background-size: cover;
+        background-repeat: no-repeat;
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+
+    .b-5 {
+        display: none;
+    }
+
+    .b-6 {
+        border: 8px solid white;
+        background: url(//unsplash.it/300/600/?photography);
+        background-size: cover;
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+
+    .b-7 {
+        border: 8px solid white;
+        background: url(//unsplash.it/300/400/?fruits);
+        background-size: cover;
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+
+    .b-8 {
+        border: 8px solid white;
+        background: url(//unsplash.it/600/400/?natue);
+        background-size: cover;
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+
+    .b-9 {
+        border: 8px solid white;
+        background: url(//unsplash.it/284/155/?natue);
+        background-size: cover;
+        background-repeat: no-repeat;
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+
+    .b-10 {
+        display: none;
+    }
+
+}
 
 
 
@@ -188,7 +330,7 @@ input[type="checkbox"] {
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 450px) {
     .main-content{
         margin-top: 90px;
     }
@@ -246,8 +388,17 @@ input[type="checkbox"] {
         color: cyan;
     }
 
-    .box-inner {
+    .box-inner-1 {
         margin-top: 30px;
+        display: grid;
+        height: 100%;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+
+    .box-inner-2 {
+        margin-top: -40px;
         display: grid;
         height: 100%;
         grid-template-rows: repeat(3, 1fr);
@@ -262,7 +413,7 @@ input[type="checkbox"] {
         background-size: cover;
         background-repeat: no-repeat;
         grid-row: span 1;
-        grid-column: span 2;
+        grid-column: span 3;
     }
 
     .b-2 {
@@ -271,7 +422,7 @@ input[type="checkbox"] {
         background-size: cover;
         background-repeat: no-repeat;
         grid-row: span 1;
-        grid-column: span 1;
+        grid-column: span 3;
     }
 
     .b-3 {
@@ -284,23 +435,46 @@ input[type="checkbox"] {
     }
 
     .b-4 {
-        border: 8px solid white;
-        background: url(//unsplash.it/71/155/?trees);
-        background-size: cover;
-        background-repeat: no-repeat;
-        grid-row: span 1;
-        grid-column: span 1;
+        visibility: hidden;
     }
 
     .b-5 {
+        visibility: hidden;
+    }
+    .b-6 {
         border: 8px solid white;
-        background: url(//unsplash.it/178/155/?animal);
+        background: url(//unsplash.it/300/600/?photography);
         background-size: cover;
-        background-repeat: no-repeat;
         grid-row: span 1;
-        grid-column: span 2;
+        grid-column: span 3;
     }
 
+    .b-7 {
+        border: 8px solid white;
+        background: url(//unsplash.it/300/400/?fruits);
+        background-size: cover;
+        grid-row: span 1;
+        grid-column: span 3;
+    }
+
+    .b-8 {
+        border: 8px solid white;
+        background: url(//unsplash.it/600/400/?natue);
+        background-size: cover;
+        grid-row: span 1;
+        grid-column: span 3;
+    }
+
+    .b-9 {
+        visibility: hidden;
+    }
+    .b-10 {
+        visibility: hidden;
+    }
+
+
 }
+
+
 
 
