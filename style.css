@@ -27,7 +27,7 @@ nav {
 }
 
 nav .logo {
-    font-size: 1.25rem;
+    font-size: clamp(0.9rem, 5vw, 1.25rem);
     color: #fff;
     display:flex;
     justify-content: center;
@@ -225,9 +225,9 @@ input[type="checkbox"] {
 
 @media (max-width: 875px) {
 
-    nav .logo {
+    /* nav .logo {
         font-size: 1.1rem;
-    }
+    } */
 
     .box-inner-1 {
         margin-top: 30px;
@@ -336,9 +336,9 @@ input[type="checkbox"] {
 
 @media (max-width: 450px) {
 
-    nav .logo {
+    /* nav .logo {
         font-size: 0.9rem;
-    }
+    } */
 
     .main-content{
         margin-top: 90px;
