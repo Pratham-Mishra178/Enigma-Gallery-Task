@@ -427,7 +427,7 @@ input[type="checkbox"] {
 
     .b-2 {
         border: 8px solid white;
-        background: url(//unsplash.it400/400/?fruits);
+        background: url(//unsplash.it/400/400/?fruits);
         background-size: cover;
         background-repeat: no-repeat;
         grid-row: span 1;
